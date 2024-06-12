@@ -15,7 +15,7 @@ class MenusTableSeeder extends Seeder
     {
         Menu::create([
             'code' => 'MEETING-SEESION-MENU-LIST',
-            'name' => 'รายการสมัยประชุม',
+            'name' => 'รายการบันทึกการประชุม',
             'route' => 'groups.meeting-session-system.meeting-session.list',    
             'view' => 'groups.meeting-session-system.meeting-session.list.index',
         ]);

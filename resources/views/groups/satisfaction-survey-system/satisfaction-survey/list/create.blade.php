@@ -20,14 +20,14 @@
         <div class="container-fluid">
             <div class="title-header">
                 <div>
-                    <h3 class="m-0">เพิ่มสมัยประชุม</h3>
+                    <h3 class="m-0">เพิ่มบันทึกการประชุม</h3>
                 </div>
                 <div aria-label="breadcrumb">
                     <ol class="breadcrumb m-0">
                         <li class="breadcrumb-item">
                             <a href="{{route('home')}}">หน้าหลัก</a>
                         </li>
-                        <li class="breadcrumb-item active">สมัยประชุม</li>
+                        <li class="breadcrumb-item active">บันทึกการประชุม</li>
                     </ol>
                 </div>
             </div>
@@ -168,7 +168,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-4 mt-3">
-                        <button type="submit" class="btn btn-success">บันทึก</button>
+                        <button type="submit" class="btn btn-success" disabled> <span class="text-danger">บันทึก (ปิดการใช้งาน)</span> </button>
                     </div>
                 </div>
             </div>

@@ -40,7 +40,7 @@
                       <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end align-items-lg-center flex-grow-1 gap-3 gap-lg-5">
                             <li class="nav-item">
-                                <a href="" class="nav-link offcanva">ข่าวประกาศ</a>
+                                <a href="" class="nav-link offcanva">รายงานการประชุม</a>
                             </li>
                             {{-- <li class="nav-item">
                                 <a href="{{ route('application') }}" class="nav-link offcanva">รับสมัครงาน</a>

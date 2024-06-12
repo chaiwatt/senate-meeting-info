@@ -41,13 +41,13 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="m-0">รายการสมัยประชุม</h4>
+                            <h4 class="m-0">รายการบันทึกการประชุม</h4>
                             <div class="d-flex gap-3">
                                 <a class="btn btn-header" href="{{route('groups.meeting-session-system.meeting-session.list.create')}}">
                                     
                                     <i class="fas fa-plus">
                                     </i>
-                                    เพิ่มสมัยประชุม
+                                    เพิ่มบันทึกการประชุม
                                 </a>
                                
                                 <div class="card-tools search">
