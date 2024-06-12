@@ -57,15 +57,15 @@
         <div class="d-flex flex-column flex-lg-row" style="gap: 80px">
             <div class="text-center" style="width: 250px">
                 <p class="text-muted mb-3">โทรศัพท์</p>
-                <p class="m-0 fw-semibold">โทรศัพท์ (+66) 02 298 2000  <br>โทรสาร (+66) 02 298 5373</p>
+                <p class="m-0 fw-semibold">โทรศัพท์ (+66)-2831-9111 <br>โทรสาร (+66)-2831-9343</p>
             </div>
             <div class="text-center" style="width: 250px">
                 <p class="text-muted mb-3">ที่อยู่</p>
-                <p class="m-0 fw-semibold">กรมควบคุมมลพิษ<br>92 ซอยพหลโยธิน 7 ถนนพหลโยธิน แขวงพญาไท เขตพญาไท กรุงเทพมหานคร 10400</p>
+                <p class="m-0 fw-semibold">สำนักงานเลขาธิการวุฒิสภา<br>เลขที่ 1111 ถนนสามเสน แขวงถนนนครไชยศรี เขตดุสิต กรุงเทพฯ 10300</p>
             </div>
             <div class="text-center" style="width: 350px">
                 <p class="text-muted mb-3">อีเมล์</p>
-                <p class="m-0 fw-semibold">ติดต่อสอบถาม : saraban@pcd.go.th
+                <p class="m-0 fw-semibold">ติดต่อสอบถาม : saraban@senate.go.th
             </div>
         </div>
         <div class="d-flex gap-4">

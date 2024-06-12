@@ -93,10 +93,10 @@
         @endphp
         <div>
             Copyright &copy; {{ $currentYear }}-{{ $currentYear + 1 }} CIF
-            กรมควบคุมมลพิษ. All rights reserved.
+            สำนักงานเลขาธิการวุฒิสภา. All rights reserved.
         </div>
         <div class="float-right d-none d-sm-inline">
-            กรมควบคุมมลพิษ
+            สำนักงานเลขาธิการวุฒิสภา
         </div>
     </footer>
 </body>
