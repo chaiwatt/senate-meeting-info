@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\ActivityLoginLog;
 use App\Models\Role;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -33,12 +34,15 @@ class SettingController extends Controller
                     ]
                 ]
             ];
+
+           $activityLoginLogs = ActivityLoginLog::all();
             
            return view('setting.index', [
                 'roles' => $roles,
                 'roleDonutData' => $roleDonutData,
                 'users' => $users,
-                'currentPage' => $currentPage
+                'currentPage' => $currentPage,
+                'activityLoginLogs' => $activityLoginLogs,
            ]);
     }
 }

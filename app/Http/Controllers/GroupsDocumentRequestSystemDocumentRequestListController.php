@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\DocumentRequest;
 use Illuminate\Http\Request;
 use App\Services\UpdatedRoleGroupCollectionService;
 
@@ -23,13 +24,14 @@ class GroupsDocumentRequestSystemDocumentRequestListController extends Controlle
         $updatedRoleGroupCollection = $roleGroupCollection['updatedRoleGroupCollection'];
         $permission = $roleGroupCollection['permission'];
         $viewName = $roleGroupCollection['viewName'];
+        $documentRequests = DocumentRequest::all();
 
-        dd('ok');
 
         return view($viewName, [
             'groupUrl' => $groupUrl,
             'modules' => $updatedRoleGroupCollection,
             'permission' => $permission,
+            'documentRequests' => $documentRequests
        ]);
     }
 }

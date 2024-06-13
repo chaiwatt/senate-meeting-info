@@ -19,14 +19,14 @@
         <div class="container-fluid">
             <div class="title-header">
                 <div>
-                    <h3 class="m-0">สมัยประชุม</h3>
+                    <h3 class="m-0">สำรวจความพึงพอใจ</h3>
                 </div>
                 <div aria-label="breadcrumb">
                     <ol class="breadcrumb m-0">
                         <li class="breadcrumb-item">
                             <a href="{{route('home')}}">หน้าหลัก</a>
                         </li>
-                        <li class="breadcrumb-item active">คำสั่ง</li>
+                        <li class="breadcrumb-item active">สำรวจความพึงพอใจ</li>
                     </ol>
                 </div>
             </div>
@@ -41,13 +41,13 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="m-0">รายการบันทึกการประชุม</h4>
+                            <h4 class="m-0">รายการสำรวจความพึงพอใจ</h4>
                             <div class="d-flex gap-3">
-                                <a class="btn btn-header" href="{{route('groups.meeting-session-system.meeting-session.list.create')}}">
+                                <a class="btn btn-header" href="">
                                     
                                     <i class="fas fa-plus">
                                     </i>
-                                    เพิ่มบันทึกการประชุม
+                                    เพิ่มแบบสำรวจความพึงพอใจ
                                 </a>
                                
                                 <div class="card-tools search">
@@ -68,24 +68,15 @@
                                             <thead class="border-bottom">
                                                 <tr>
                                                     <th>วันที่</th>
-                                                    <th>ครั้งที่</th>
-                                                    <th>ประเภท</th>
-                                                    <th>สมัยประชุม</th>
+                                                    <th>ชื่อแบบสำรวจ</th>
                                                     <th class="text-end" style="width: 120px">เพิ่มเติม</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                              @foreach ($meetingSessions as $meetingSession)
+                                              @foreach ($satisfactionSurveys as $satisfactionSurvey)
                                                   <tr>
-                                                    {{-- <td>{{$prohibition->issue_date}}</td>
-                                                    <td>{{$prohibition->checkPoint->name}}</td>
-                                                    <td>{{$prohibition->prohibitionType->name}}</td>
-                                                    <td>{{$prohibition->prohibitionStatus->name}}</td>
-                                                    <td class="text-center">{{$prohibition->dayRemain}}</td>
-                                                    <td>{{$prohibition->vihicleType->name}}</td>
-                                                    <td>{{$prohibition->vihicle->brand}}</td>
-                                                    <td>{{$prohibition->vihicle->license_plate}} {{$prohibition->vihicle->province->name}}</td>
-                                                    <td>{{$prohibition->prohibitionType->name}}</td> --}}
+                                                  <td>{{ \Carbon\Carbon::parse($satisfactionSurvey->created_at)->format('d/m') }}/{{ \Carbon\Carbon::parse($satisfactionSurvey->created_at)->year + 543 }}</td>
+                                                    <td>{{$satisfactionSurvey->name}}</td>
                                                   </tr>
                                               @endforeach
                                             </tbody>

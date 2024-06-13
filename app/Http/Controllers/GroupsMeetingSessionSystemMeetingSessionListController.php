@@ -36,6 +36,7 @@ class GroupsMeetingSessionSystemMeetingSessionListController extends Controller
         $permission = $roleGroupCollection['permission'];
         $viewName = $roleGroupCollection['viewName'];
         $meetingSessions = MeetingSession::all();
+        
 
         return view($viewName, [
             'groupUrl' => $groupUrl,

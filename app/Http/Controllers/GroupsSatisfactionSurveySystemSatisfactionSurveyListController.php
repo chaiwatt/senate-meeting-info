@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\SatisfactionSurvey;
 use Illuminate\Http\Request;
 use App\Services\UpdatedRoleGroupCollectionService;
 
@@ -23,13 +24,14 @@ class GroupsSatisfactionSurveySystemSatisfactionSurveyListController extends Con
         $updatedRoleGroupCollection = $roleGroupCollection['updatedRoleGroupCollection'];
         $permission = $roleGroupCollection['permission'];
         $viewName = $roleGroupCollection['viewName'];
+        $satisfactionSurveys = SatisfactionSurvey::all();
 
-        dd('ok');
 
         return view($viewName, [
             'groupUrl' => $groupUrl,
             'modules' => $updatedRoleGroupCollection,
             'permission' => $permission,
+            'satisfactionSurveys' => $satisfactionSurveys
        ]);
     }
 }

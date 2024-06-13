@@ -29,10 +29,13 @@ use App\Http\Controllers\GroupsMeetingSessionSystemMeetingSessionListController;
 use App\Http\Controllers\GroupsSatisfactionSurveySystemSettingGeneralController;
 use App\Http\Controllers\GroupsDocumentRequestSystemDocumentRequestListController;
 use App\Http\Controllers\GroupsSatisfactionSurveySystemSatisfactionSurveyListController;
-
+use App\Models\MeetingSession;
 
 Route::get('/', function () {
-    return view('welcome');
+    $meetingSessions = MeetingSession::all();
+    return view('welcome',[
+        'meetingSessions' => $meetingSessions
+    ]);
 });
 
 Auth::routes();

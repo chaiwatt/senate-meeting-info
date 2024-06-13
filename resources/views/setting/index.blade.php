@@ -86,7 +86,30 @@
                                             </tbody>
                                         </table>
                                     </div>
+
+                                    <div class="table-responsive">
+                                        <table class="table table-borderless border-bottom">
+                                            <thead class="border-bottom">
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>ผู้ใช้งาน</th>
+                                                    <th>เวลาเข้าใช้งาน</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @foreach ($activityLoginLogs as $activityLoginLog)
+                                                <tr>
+                                                    <td>{{ $loop->iteration }}</td>
+                                                    <td>{{ $activityLoginLog->user->name }} {{ $activityLoginLog->user->lastname }} </td>
+                                                    <td>{{ \Carbon\Carbon::parse($activityLoginLog->created_at)->format('d/m/Y H:i') }}</td>
+                                                </tr>
+                                                @endforeach
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
+
+                                
                             </div>
                         </div>
                     </div>

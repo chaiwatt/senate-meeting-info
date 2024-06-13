@@ -30,6 +30,9 @@ class DatabaseSeeder extends Seeder
         $this->call(MenusTableSeeder::class);
         $this->call(GroupModuleMenusTableSeeder::class); 
         $this->call(MeetingSessionTypesTableSeeder::class); 
-        
+        $this->call(MeetingSessionsTableSeeder::class); 
+        $this->call(DocumentRequestsTableSeeder::class); 
+        $this->call(SatisfactionSurveysTableSeeder::class); 
+              
     }
 }
